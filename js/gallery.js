@@ -1,7 +1,7 @@
 // Photos are written in index.html so search engines can see them without JavaScript.
 const photos = [...document.querySelectorAll('#gallery-grid .gallery-card')].map(card => {
   const img = card.querySelector('img');
-  return { card, src: img.getAttribute('src'), alt: img.alt, category: card.dataset.category, title: card.dataset.title, description: card.dataset.description };
+  return { card, src: img.dataset.full || img.getAttribute('src'), thumb: img.getAttribute('src'), alt: img.alt, category: card.dataset.category, title: card.dataset.title, description: card.dataset.description };
 });
 
 const grid = document.getElementById('gallery-grid');
@@ -55,7 +55,7 @@ function renderThumbnails() {
     button.setAttribute('aria-label', `Show image ${index + 1}: ${photo.title}`);
     button.setAttribute('aria-current', String(index === activeIndex));
     const img = document.createElement('img');
-    img.src = photo.src;
+    img.src = photo.thumb;
     img.alt = '';
     img.loading = 'lazy';
     button.append(img);
