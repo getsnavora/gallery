@@ -30,3 +30,4 @@
 .card-caption{display:block;padding:10px 12px 12px;font-size:14px;font-weight:600;line-height:1.2;text-align:left}
 .gallery-card .card-hint{top:12px;bottom:auto}
 @media(max-width:640px){.card-caption{font-size:12px;padding:8px 9px 10px}}
+.gallery-note{margin:0 14px 14px;font:14px/1.45 Arial,sans-serif;color:#3a4a63}@media(max-width:640px){.gallery-note{margin:0 4px 12px;font-size:13px}}
