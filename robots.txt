@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://getsnavora.github.io/gallery/sitemap.xml

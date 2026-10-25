@@ -22,3 +22,6 @@
 .thumbnail-button img{object-fit:contain;background:#eef2ec}
 @media(max-width:900px){.gallery-grid{columns:3}}
 @media(max-width:640px){.gallery-grid{columns:2;column-gap:7px}.gallery-card,.gallery-card:nth-child(n),.gallery-grid[data-filtered="true"] .gallery-card{height:auto;margin-bottom:7px}.gallery-card:first-child{height:auto}}
+
+.gallery-card[hidden]{display:none!important}
+.site-footer{max-width:1480px;margin:8px auto 0;padding:18px 32px 34px;font:15px/1.5 Arial,sans-serif;color:var(--navy);text-align:center}.site-footer a{color:#1f7a00;font-weight:700}
